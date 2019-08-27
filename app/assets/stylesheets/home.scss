@@ -48,17 +48,21 @@
   align-items: center;
   justify-content: center;
   .about__title{
-    font-size: 3rem;
-    height: 25%;
-    background-color: #FCAA00;
-    border-radius: 30px;
-    color: #FEEABC;
+    height:40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:30px;
-    margin:70px;
     p{
+      font-size: 3rem;
+      height: 30%;
+      background-color: #FCAA00;
+      border-radius: 30px;
+      color: #FEEABC;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:30px;
+      font-family:"Rounded Mplus 1c";
       span {
         position: relative;
       }
@@ -82,7 +86,11 @@
     }
   }
   .about__detail{
+    font-family:"Rounded Mplus 1c";
+    font-size: 2rem;
     width:90%;
+    height:60%;
+    margin-bottom:20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,14 +103,13 @@
       &__content-image{
         display:flex;
         align-items: center;
-        margin-bottom:10px;
+        margin-bottom:30px;
         .image-content{
           width: 350px;
           height:auto;  
         }
       }
       &__content-nickname{
-        font-size: 1.5rem;
         width:100%;
         display:flex;
         justify-content: center;
@@ -122,7 +129,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 1.5rem;
       .contents-content{
         width:100%;
         display: flex;
