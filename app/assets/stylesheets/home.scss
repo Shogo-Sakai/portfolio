@@ -38,3 +38,111 @@
 .contents-contact{
   background-color:#FCAA00;
 }
+
+// about
+.about__wrapper{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .about__title{
+    font-size: 3rem;
+    height: 25%;
+    background-color: #FCAA00;
+    border-radius: 30px;
+    color: #FEEABC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    margin:70px;
+    p{
+      span {
+        position: relative;
+      }
+      
+      span::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #61C359;
+        transform-origin: center;
+        transform: translate(-50%, 0) scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      span:hover::before {
+        transform: translate(-50%, 0) scaleX(1);
+      }
+    }
+  }
+  .about__detail{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__image{
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__content-image{
+        display:flex;
+        align-items: center;
+        margin-bottom:10px;
+        .image-content{
+          width: 350px;
+          height:auto;  
+        }
+      }
+      &__content-nickname{
+        font-size: 1.5rem;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        &__label{
+          border-right: 1px solid #767676;
+          margin: 0 10px 20px 0;
+          padding:0 10px 0 0 ;
+          color: #767676;
+        }
+        &__me{
+          color: #61C359;
+        }
+      }
+    }
+    &__contents{
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      .contents-content{
+        width:100%;
+        display: flex;
+      }
+      .about-label{
+        width:50%;
+        text-align: right;
+        border-right: 1px solid #767676;
+        margin: 0 10px 20px 0;
+        padding:0 10px 0 0 ;
+        color: #767676;
+      }
+      .about-content{
+        width: 50%;
+        text-align: left;
+        color: #61C359;
+        a{
+          color: #61C359;
+        }
+      }
+    }
+  }
+}
