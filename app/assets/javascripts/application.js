@@ -10,7 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery 
 //= require rails-ujs
+//= require materialize-sprockets
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+// parallax
+$(document).on('ready turbolinks:load', function(){
+  $('.parallax').parallax();
+});

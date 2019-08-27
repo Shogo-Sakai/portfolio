@@ -1,3 +1,40 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 共通部分
+.contents_container{
+  width:100vw;
+  height:100vh;
+}
+
+.p-image{
+  // width:150vw;
+  height:150vh;
+}
+
+// home
+
+.contents-about{
+  background-color:#FEEABC;
+}
+
+.contents-experience{
+  background-color: #FCAA00;
+}
+
+.contents-technology{
+  background-color: #61C359;
+}
+
+.contents-portfolio{
+  background-color: #FEEABC;
+}
+
+.contents-hobby{
+  background-color:#767676;
+}
+
+.contents-contact{
+  background-color:#FCAA00;
+}
