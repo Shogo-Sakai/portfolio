@@ -20,5 +20,16 @@
 
 // parallax
 $(document).on('ready turbolinks:load', function(){
+  
   $('.parallax').parallax();
+});
+
+$(document).on('ready turbolinks:load', function() {
+  M.Modal._count = 0;
+  var elems = document.querySelectorAll('.modal');
+  var options ={
+    opacity: 0.6,
+    inDuration: 500
+  };
+  M.Modal.init(elems, options);
 });
