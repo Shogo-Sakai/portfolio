@@ -43,12 +43,14 @@
 .about__wrapper{
   width:100%;
   height:100%;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   .about__title{
     height:30%;
+    margin:20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +63,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding:30px;
+      padding:40px;
       font-family:"Rounded Mplus 1c";
       span {
         position: relative;
-      }
-      
+      }            
       span::before {
         content: '';
         position: absolute;
@@ -78,13 +79,18 @@
         transform-origin: center;
         transform: translate(-50%, 0) scaleX(0);
         transition: transform 0.3s ease-in-out;
-      }
-      
+      }      
       span:hover::before {
         transform: translate(-50%, 0) scaleX(1);
       }
     }
+    // technologies title
+    .technologies{
+      background-color: #FCAA00;
+      color: #FEEABC;
+    }
   }
+
   .about__detail{
     font-family:"Rounded Mplus 1c";
     font-size: 2rem;
@@ -95,6 +101,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow: auto;
     &__image{
       width:50%;
       display: flex;
@@ -154,3 +161,33 @@
   }
 }
 
+// technologies
+.card-contents-wrapper{
+  width:90%;
+  height: 100%;
+  overflow: auto;
+  .category{
+    font-size: 1.5rem;
+    color: #FEEABC;
+    margin:15px;
+  }
+  .card-contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .card{
+      border-radius: 20px;
+      box-sizing: border-box;
+      width:25%;
+      padding:20px 20px 0 20px;
+      margin:30px;
+      .card-image{
+      }
+      .card-content{
+      }
+    }
+
+    
+  }  
+}
