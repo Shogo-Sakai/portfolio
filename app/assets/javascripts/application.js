@@ -23,10 +23,8 @@ $(document).on('ready turbolinks:load', function(){
   $('.parallax').parallax();
 
   // carousel(ポートフォリオの画像コレクション)
-  $('.carousel').carousel({
-    duration: 200,
-    dist: -100,
-    indicators: true,
+  $('.slider').slider({
+    
   });
 });
 
