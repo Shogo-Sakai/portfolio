@@ -84,6 +84,7 @@
         transform: translate(-50%, 0) scaleX(1);
       }
     }
+
     // technologies title
     .technologies{
       background-color: #FCAA00;
@@ -107,9 +108,9 @@
     flex-wrap: wrap;
     overflow: auto;
     &__image{
-      width:50%;
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
       &__content-image{
         display:flex;
@@ -117,7 +118,7 @@
         justify-content: center;
         margin-bottom:30px;
         .image-content{
-          width: 60%;
+          width: 100%;
           height:auto;  
         }
       }
