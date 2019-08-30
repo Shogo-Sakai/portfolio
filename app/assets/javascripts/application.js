@@ -26,6 +26,10 @@ $(document).on('ready turbolinks:load', function(){
   $('.slider').slider({
     interval: 6000
   });
+
+  // フロートボタン
+  $('.fixed-action-btn').floatingActionButton();
+
 });
 
 $('.carousel.carousel-slider').carousel({
