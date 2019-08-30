@@ -99,20 +99,23 @@
   .about__detail{
     font-family:"Rounded Mplus 1c";
     font-size: 2rem;
-    width:90%;
+    width:95%;
     height:70%;
-    margin-bottom:20px;
+    // margin-bottom:20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
     &__image{
+      // width:25%;
+      font-size: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
       &__content-image{
+        // width:100%;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -123,7 +126,7 @@
         }
       }
       &__content-nickname{
-        width:100%;
+        width:50%;
         display:flex;
         justify-content: center;
         &__label{
@@ -138,7 +141,7 @@
       }
     }
     &__contents{
-      width:50%;
+      // width:50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -330,6 +333,9 @@
             background-color: #0077ffbf;
           }
           .portfolio3{
+            background-color: rgba(252, 168, 0, 0.8);
+          }
+          .portfolio4{
             background-color: rgba(252, 168, 0, 0.8);
           }
         }
