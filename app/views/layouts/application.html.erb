@@ -15,11 +15,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%# google mapsの読み込み（application.html.erbではモーダルを閉じた後mapが表示されない） %>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCozhxsvliH5mdbfrwTbleyMTECVS1t3c4&callback=initMap" async defer></script>
+
+    <%# fontawesome %>
+    <script src="https://kit.fontawesome.com/48075287ab.js"></script>
   </head>
 
   <body>
     <%= yield %>
+
+    <%# google mapsの読み込み（application.html.erbではモーダルを閉じた後mapが表示されない） %>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCozhxsvliH5mdbfrwTbleyMTECVS1t3c4&callback=initMap" async defer></script>
+
   </body>
 </html>
