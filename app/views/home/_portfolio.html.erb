@@ -30,31 +30,18 @@
                     <tr class="list-top">
                       <td>使用している言語等</td>
                       <td><a class="btn modal-trigger" href="#modal11">Details</a></td>
-                      <%# モーダル %>
-                        <div id="modal11" class="modal">
-                          <div class="modal-content">
-                            <h4>使用している言語等</h4>
-                            <p>
-                            HTML, CSS, Javascript, Ruby, Sass
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <%# <a href="#experiences" class="modal-close waves-effect waves-green btn-flat">Close</a> %>
-                          </div>
-                        </div>
-
                     </tr>
                     <tr>
                       <td>実装した機能</td>
-                      <td><a class="btn">Details</a></td>
+                      <td><a class="btn modal-trigger" href="#modal12">Details</a></td>
                     </tr>
                     <tr>
                       <td>工夫、苦労した点</td>
-                      <td><a class="btn">Details</a></td>
+                      <td><a class="btn modal-trigger" href="#modal13">Details</a></td>
                     </tr>
                     <tr>
                       <td>URLやソースコード</td>
-                      <td><a class="btn">Details</a></td>
+                      <td><a class="btn modal-trigger" href="#modal14">Details</a></td>
                     </tr>
                   </table>
                 </div>
@@ -63,7 +50,7 @@
           </li>
 
           <%# ポートフォリオ２ %>
-          <li>
+          <%# <li>
             <div class="slides__contents__content">
               <div class="slides__contents__content__image">
                 <img src="assets/home_logo.JPG" >
@@ -96,10 +83,10 @@
                   </table>
                 </div>
               </div>
-            </div>
+            </div> %>
 
           <%# ポートフォリオ３ %>
-          <li>
+          <%# <li>
             <div class="slides__contents__content">
               <div class="slides__contents__content__image">
                 <img src="assets/home_logo.JPG" >
@@ -133,10 +120,13 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> %>
+
+        <%# 各ポートフォリオモーダル %>
+        <%= render "modal_portfolio" %>
+
         </ul>
       </div>
-
     </div>
   </div>
 </div>

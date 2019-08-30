@@ -24,7 +24,7 @@ $(document).on('ready turbolinks:load', function(){
 
   // carousel(ポートフォリオの画像コレクション)
   $('.slider').slider({
-    interval: 30000
+    interval: 6000
   });
 });
 
