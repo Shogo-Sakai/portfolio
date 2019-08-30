@@ -11,6 +11,8 @@
 
       <div class="slider">
         <ul class="slides z-depth-3">
+
+        <%# ポートフォリオ１ %>
           <li>
             <div class="slides__contents__content">
               <div class="slides__contents__content__image">
@@ -27,7 +29,20 @@
                   <table class="highlite centered">
                     <tr class="list-top">
                       <td>使用している言語等</td>
-                      <td><a class="btn">Details</a></td>
+                      <td><a class="btn modal-trigger" href="#modal11">Details</a></td>
+                      <%# モーダル %>
+                        <div id="modal11" class="modal">
+                          <div class="modal-content">
+                            <h4>使用している言語等</h4>
+                            <p>
+                            HTML, CSS, Javascript, Ruby, Sass
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <%# <a href="#experiences" class="modal-close waves-effect waves-green btn-flat">Close</a> %>
+                          </div>
+                        </div>
+
                     </tr>
                     <tr>
                       <td>実装した機能</td>
@@ -46,6 +61,8 @@
               </div>
             </div>
           </li>
+
+          <%# ポートフォリオ２ %>
           <li>
             <div class="slides__contents__content">
               <div class="slides__contents__content__image">
@@ -80,6 +97,8 @@
                 </div>
               </div>
             </div>
+
+          <%# ポートフォリオ３ %>
           <li>
             <div class="slides__contents__content">
               <div class="slides__contents__content__image">

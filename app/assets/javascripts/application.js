@@ -24,8 +24,13 @@ $(document).on('ready turbolinks:load', function(){
 
   // carousel(ポートフォリオの画像コレクション)
   $('.slider').slider({
-    
+    interval: 30000
   });
+});
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
 });
 
 // モーダル
