@@ -1,69 +1,98 @@
+<%# about %>
 <div class="contents_container contents-about z-depth-5" id="about">
   <%=render "about"%>
 </div>
+
 <div class="parallax-container z-depth-2">
   <div class="parallax "><img src="/assets/live1.JPG" class="p-image about-experience"></div>
 </div>
+
+<%# experience %>
 <div class="contents_container contents-experience z-depth-5" id="exp">
   <%=render "experience"%>
 </div>
+
 <div class="parallax-container z-depth-2">
   <div class="parallax"><img src="/assets/spring2.JPG" class="p-image experience-technology"></div>
 </div>
+
+<%# technology %>
 <div class="contents_container contents-technology z-depth-5" id="tech">
   <%=render "technology"%>
 </div>
+
 <div class="parallax-container z-depth-2">
   <div class="parallax"><img src="/assets/summer.JPG" class="p-image technology-portfolio"></div>
 </div>
-<div class="contents_container contents-portfolio z-depth-5" id="port">
+
+<%# portfolio %>
+<div class="contents_container contents-about z-depth-5" id="port">
   <%=render "portfolio"%>
 </div>
+
 <%# <div class="parallax-container z-depth-2"> %>
   <%# <div class="parallax"><img src="/assets/autumn.JPG" class="p-image portfolio-hobby"></div> %>
 <%# </div> %>
+
+<%# hobby %>
 <%# <div class="contents_container contents-hobby z-depth-5"> %>
   <%# <%= render "hobby"  %>
 <%# </div> %>
+
 <div class="parallax-container z-depth-2">
   <div class="parallax"><img src="/assets/winter1.JPG" class="p-image hobby-contact"></div>
 </div>
-<div class="contents_container contents-contact z-depth-5" id="contact">
+
+<%# contact %>
+<div class="contents_container contents-experience z-depth-5" id="contact">
   <%=render "contact"%>
 </div>
 
-<%# フロートインデックスボタン %>
 
+
+
+<%# フロートインデックスボタン %>
 <div class="fixed-action-btn">
-  <a class="btn-floating btn-large green" >
   <%# index %>
+  <a class="btn-floating btn-large green" >
     <i class="large material-icons ">format_list_bulleted</i>
   </a>
+
   <ul>
+    <%# home %>
     <li>
       <a class="btn-floating  btn-large orange" href="#about">
         <i class="large material-icons">home</i>
       </a>
     </li>
+    
+    <%# experience %>
     <li>
       <a class="btn-floating btn-large grey" href="#exp">
         <i class="fas fa-address-card"></i>
       </a>
     </li>
+
+    <%# technology %>
     <li>
       <a class="btn-floating btn-large green" href="#tech">
         <i class="fas fa-tools"></i>
       </a>
     </li>
+
+    <%# portfolio %>
     <li>
       <a class="btn-floating  btn-large orange" href="#port">
         <i class="fas fa-pager"></i>
       </a>
     </li>
-        <li>
+
+    <%# contact %>
+    <li>
       <a class="btn-floating btn-large grey" href="#contact">
         <i class="far fa-paper-plane"></i>
       </a>
     </li>
+
   </ul>
 </div>

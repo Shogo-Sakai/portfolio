@@ -98,6 +98,7 @@
 
   .about__detail{
     font-family:"Rounded Mplus 1c";
+    
     font-size: 2rem;
     width:95%;
     height:70%;
@@ -490,3 +491,15 @@
 // form{
 //   height:calc(100vh / 8.5);
 // }
+
+
+// 背景色
+.contents-about{
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+.contents-experience{
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.contents-technology{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}

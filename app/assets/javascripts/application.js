@@ -33,11 +33,6 @@ $(document).on('ready turbolinks:load', function(){
 
 });
 
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true
-});
-
 // モーダル
 $(document).on('ready turbolinks:load', function() {
   M.Modal._count = 0;
@@ -48,6 +43,28 @@ $(document).on('ready turbolinks:load', function() {
   };
   M.Modal.init(elems, options);
 });
+
+
+// $(document).on('ready turbolink:load', function(){
+$(function(){
+// #で始まるアンカーをクリックした場合に処理
+  $("a[href^='#']").click(function(){
+    // スクロールのスピード
+    var speed = 400; //ミリ秒
+    // アンカーの値取得
+    var href = $(this).attr("href");
+    // 移動先を取得
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    // 移動先を数値で取得
+    var position = target.offset().top;
+    // スムーススクロール
+    $("body,html").animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
+
+
+
 
 // googlemaps api
 // 変数定義
