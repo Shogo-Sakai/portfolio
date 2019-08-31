@@ -360,9 +360,10 @@
   width:90%;
   height:80vh;
   overflow:auto;
+  font-family:"Rounded Mplus 1c";
   &__sns{
     // width:100%;
-    // height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -382,8 +383,14 @@
       }
     }
     &__list{
+      display: block;
+      height: 100%;
       color: white;
       font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
       a{
         color: white;
       }
@@ -420,7 +427,7 @@
     }
   }
   &__direct{
-    height:100%;
+    height:70%;
     color: white;
     &__form-title{
       text-align: center;
@@ -436,8 +443,24 @@
         padding:0 20px; 
       }
     }
+    &__form-wrapper{
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__dm{
+        height: 100%;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: none;
+        a{
+          display: block;
+          color: white;
+        }
+      }
+    }
   }
 }
-form{
-  height:calc(100vh / 8.5);
-}
+// form{
+//   height:calc(100vh / 8.5);
+// }
