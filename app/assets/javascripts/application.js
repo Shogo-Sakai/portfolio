@@ -45,8 +45,7 @@ $(document).on('ready turbolinks:load', function() {
 });
 
 
-// $(document).on('ready turbolink:load', function(){
-$(function(){
+$(document).on('ready turbolink:load', function(){
 // #で始まるアンカーをクリックした場合に処理
   $("a[href^='#']").click(function(){
     // スクロールのスピード

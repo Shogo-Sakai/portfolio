@@ -156,13 +156,12 @@ legend{
     font-family:"Rounded Mplus 1c";
     
     font-size: 2rem;
-    width:95%;
+    // width:95%;
     height:70%;
     // margin-bottom:20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     overflow: auto;
     &__image{
       // width:25%;
