@@ -24,7 +24,8 @@ $(document).on('ready turbolinks:load', function(){
 
   // carousel(ポートフォリオの画像コレクション)
   $('.slider').slider({
-    interval: 6000
+    interval: 6000,
+    height: 500
   });
 
   // フロートボタン
