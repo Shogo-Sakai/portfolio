@@ -326,6 +326,11 @@ legend{
       width:25%;
       padding:20px 20px 0 20px;
       margin:30px;
+      .card-content{
+        .card-title{
+          font-weight: bold;
+        }
+      }
       .card-reveal{
         .card-title{
           font-weight: bold;
