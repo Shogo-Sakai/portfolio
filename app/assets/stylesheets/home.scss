@@ -307,16 +307,17 @@ legend{
 
 
 // technologies
+.category{
+  font-size: 1.5rem;
+  color: #FEEABC;
+  margin:15px;
+}
+
 .card-contents-wrapper{
   width:90%;
   height: 100%;
   overflow: auto;
   font-family:"Rounded Mplus 1c";
-  .category{
-    font-size: 1.5rem;
-    color: #FEEABC;
-    margin:15px;
-  }
   .card-contents{
     display: flex;
     justify-content: space-around;
@@ -334,6 +335,7 @@ legend{
         }
       }
       .card-reveal{
+        text-align: left;
         .card-title{
           font-weight: bold;
         }
