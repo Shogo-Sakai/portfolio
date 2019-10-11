@@ -7,15 +7,14 @@
     <meta charset="UTF-8">
     <meta name="Shogo Sakai" content="HTMQ">
     <meta http-equiv="content-language" content="ja">
-
-    <%# google fonts %>
-    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
-    <%# css reset %>
-    <%# <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="style.css" media="screen">
 
+    <%# レスポンシブ対応 %>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <%# google fonts %>
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
     <%# fontawesome %>
     <script src="https://kit.fontawesome.com/48075287ab.js"></script>
   </head>
